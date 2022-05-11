@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Press Start 2P", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer {
+  height: 100vh;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  width: 700px;
+  height: 500px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.child header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.number {
+  display: flex;
+  border: 1px solid black;
+  width: 7vw;
+  height: 8vh;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.between {
+  margin-top: 20px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.guessSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.guess {
+  margin-left: 15px;
+  background: none;
+  border: 0.5px solid black;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.checking {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.check,
+.again {
+  margin-top: 15px;
+  width: 8rem;
+  height: 2.5rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.sc,
+.hs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.labelScore,
+.valueScore {
+  display: inline-block;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.labelHigh,
+.valueHigh {
+  display: inline-block;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
