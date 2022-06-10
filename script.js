@@ -1,8 +1,16 @@
 'use strict';
-
+const btnCloseModal = document.querySelector('.close-modal');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
 const guessNum = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
+
+const closeModal = function () {
+  console.log('buttom clicked');
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
 
 function resetGame() {
   score = 20;
@@ -37,3 +45,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.valueHigh').textContent = highScore;
   resetGame();
 });
+
+btnCloseModal.addEventListener('click', closeModal);
